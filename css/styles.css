@@ -57,7 +57,7 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: 80%;
   padding-left: var(--container-padding);
   padding-right: var(--container-padding);
   padding-top: var(--container-padding);
@@ -256,6 +256,7 @@ a:hover {
   padding-bottom: 2rem;
  }
 
+  /* ------SLUT HEADER-------*/
 
 
 
@@ -269,410 +270,34 @@ a:hover {
 
 /* ----START HERO SECTION-----*/
 
-/*
-#section-hero {
-  
-}
-
-
-       #section-hero {
-
-        background: rgb(99,102,241);
-        background: linear-gradient(0deg, rgba(99,102,241,1) 0%, rgba(218,70,239,1) 42%, rgba(241,244,253,1) 83%);
-        padding-bottom: 0;
-        padding-left: 6rem;
-        padding-right: 6rem;
-        overflow: hidden;
-     
-
-        .container-hero {
-          display: grid;
-          gap: 4rem;
-          grid-template-columns: 2fr 3fr;
-          grid-template-areas: "headline imageshero"
-                                "content imageshero" ;
-
-         /* @media (min-widht: 768px) {
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: auto auto;
-          }
-         
-          @media (min-widht: 1400px) {
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows:  auto auto;
-          } */
-
-        
-
-        .headline {
-          grid-area: headline;
-          text-align: left;
-          padding-top: 6rem;
-          padding-bottom: 0;
-        
-          h1 {
-         font-size: 56px;
-         font-weight: 800;
-        }
-        }
-
-        .content {
-          grid-area: content;
-          text-align: left;
-          
-            p {
-                font-size: 18px;
-                margin-bottom: 4rem;
-            }
-            .buttons {
-              display: flex;
-              flex-direction: row;
-              gap: 2rem;
-              padding-bottom: 2rem;
-
-            }
-            .discover-more {
-              color: var(--color-gray900);
-              display: flex;
-              align-items: center;
-              justify-content: flex-start;
-              gap: 1rem;
-              margin-top: 6rem;
-              margin-bottom: 2rem;
-
-            }
-        }
-
-
-        .imageshero {
-          position: relative;
-          grid-area: images-hero;
-          display: block;
-
-          bottom: 0;
-          right: 100px;
-          width: auto;
-          height: auto;
-         
-          /*display: none;*/
-
-         /* @media (min-widht: 768px) {
-            display: block;
-          } */
-
-          
-          .img-back {
-            position: absolute;
-          
-            z-index: 10; /*minus framför bilden försvinner av nån anledening*/
-            bottom: 0;
-            right: 200px;
-          /*  width: 25%; */
-            height: auto;
-          }
-         
-          .img-front {
-            position: absolute;
-            z-index: 11;
-            bottom: -20px;
-            right: 0;
-            /* width: 28%; */
-            height: auto;
-          }
-
-
-
-
-        }
-
-       
-
-
-
-       #appfeatures {  
-
-       
-       background: var(--color-white);
-       
-       padding-bottom: 2rem;
-       padding-left: 6rem;
-       padding-right: 6rem;
-       overflow: hidden;
-      
-
-       .container-features {
-         display: grid;
-         gap: 4rem;
-         grid-template-columns: 1fr 2fr;
-         /*grid-template-areas: "appfeaturesmobil appfeatures2 "
-                               "appfeaturesrubrik appfeaturestext" ;*/
-     
-
-                                   
-                              }
-
-          .appfeaturesmobil {
-            padding-top: 4rem;
-          }                    
-
-          .appfeatures-rubrik {
-           color: var(--color-gray900);
-            font-size: 40px;
-            font-weight: bold;
-            padding-top: 2rem;
-            text-align: left;
-            
-          }
-
-          .rad2-text {
-           color: var(--color-gray600);
-            font-size: 18px;
-            font-weight: large;
-            text-align: left ;
-            padding-bottom: 4rem;
-            
-
-          }
-
-
-
-
-          .appfutures-box {
-            color: var(--color-gray800);
-            font-size: 16px;
-            display: grid;
-            gap: 1rem;
-            grid-template-rows: 1fr 1fr 1fr;
-            grid-template-columns: 1fr 1fr;
-            
-            background-color: var(--color-gray100);
-            padding-top: 1rem;
-      
-           
-            
-          }      
-        
-
-        }
-
-
-
-
-
-
-
-
-
 /*----LOGOBOX START----*/
 
-
-#logos {
-  padding-right: 2rem;
-  padding-left: 2rem;
+#brands {
+  display: none;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
 
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
   }
 
-.logobox {
-  border: 1px solid var(--color-gray300);
-  border-radius: 8px;
-  height: 100px;
-  width: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-}
-
-
-
-
-
-
-#howdoesitwork {
-  background-color: var(--color-gray100);
-  margin-bottom: 1rem;
-
-  .howdoesrubrik {
-    
-    font-size: 40px;
-    width: bold;
-    text-align: center;
-    margin-bottom: 4rem;
-    margin-top: 5rem;
-    
   }
 
-  .how3mobiler {  
-    display: flex;
+  .logobox {
+    border: 1px solid var(--color-gray300);
+    border-radius: 8px;
+    height: 100px;
+    width: 200px;
+    display: flex; /* Justerar loggan i rutan*/
     justify-content: center;
-    gap: 4rem;
-    
-}
-
-.howdoestextnere {
-  text-align: center;
-  font-size: 24px;
-}
-
-.howdoesnederst {
-  text-align: center;
-  font-size: 16px;
-  margin-bottom: 5rem;
-}
-
-}
-
-/*-------------------------------------*/
-
-#makeyourmoney {
-
-  display: grid;
-  gap: 1rem;
- 
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "makeyourmoney makeyourmobil1"
-                        "makeyourtre makeyourmobil1" 
-                        "makeyourbutton makeyourmobil1";
-
-
-.makeyourcontainer {
-
-  padding-left: 8rem;
-  padding-right: 8rem;
-
-
-.makeyourmoney {
-  font-size: 32px;
-  color: var(--color-gray900);
-  font-weight: bold;
-  text-align: left;
-}
-
-.makeyourtre {
-  font-size: 16px;
-  color: var(--color-gray700);
-}
-
-.makeyourbutton {
-padding-top: 4rem;
-}
-
-.makeyourmobil1 {
-  gap: 1rem;
-
-}
-
-}
-}
-
-
-
-
-
-#makeyourmoney2 {
-  gap: 1rem;
-  padding-top: 6rem;
-  padding-bottom: 8rem;
-  
-
-    .makeyourcontainerr {
-      padding-left: 8rem;
-      padding-right: 8rem;
-     
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: "makeyourmobilmobil makeyourmoneymoney"
-                            "makeyourmobilmobil makeyourtest"
-                            "makeyourmobilmobil makeyourtest"
-                             "makeyourmobilmobil makeyourbutton2";
-
-        
-  /*bild
-  .makeyourmobilmobil {
-  }*/
-  
-
-   /*Rubrik*/
-   .makeyourmoneymoney {
-    font-size: 32px;
-    color: var(--color-gray900);
-    font-weight: bold;
-    text-align: left;
-    }
-
-    .makeyourtest {
-      
-      text-align: left;
-
-
-      .makeyourreciveone {
-        font-size: 16px;
-        padding-top: 0.5rem;
-        padding-bottom: 1rem;
-        
-       
-        }
-  
-      .makeyourrecivetwo {
-        font-size: 16px;
-        padding-top: 0.5rem;
-        padding-bottom: 1rem;
-        }
-    }
-
-    .makeyourbutton2 {
-      padding-top: 2rem;
-    }
- 
-
-
-  }
-}
-  
-  
-  
-#lovingclients {
-
-background-color: var(--color-gray100);
-
-
-  .lovingcontainer {
-    padding-left: 8rem;
-    padding-right: 8rem;
-    padding-bottom: 10rem;
-    padding-top: 10rem;
-
-    display: flex;
-    justify-content: space-evenly;
     align-items: center;
 
-    .lovingdelett {
-      font-size: 24px;
-      }
-
-      .lovingdelandre {
-        font-size: 8px;
-       
-        }
-
-      .lovingdeltredje {
-      font-size: 24px;
-    }
-
-
-    
-
 }
-
-}
-
 
 
 
@@ -704,8 +329,6 @@ background-color: var(--color-gray100);
       gap: 5px;
     }
 
-   
-
     .credit {
     display: none;
     
@@ -733,13 +356,25 @@ background-color: var(--color-gray100);
     gap: 3rem;
    }
 
-   footer {
+   
+   #brands {
+    display: block;
+     #logo-5, #logo-6{
+      display: none;
+     
+      }
+    
+    }
+
+    
+
+    footer {
     .credit {
     display: block;
-    }
-  }
 
-
+    
+        }
+      }
 
 }
 
@@ -747,9 +382,9 @@ background-color: var(--color-gray100);
 
 
 @media (min-width: 1400px) {
+
   .container-header { 
     max-width: 1320px;
-  
   }
  
     header .container-header {
@@ -761,13 +396,36 @@ background-color: var(--color-gray100);
     display: block;
    }
 
-  #auth-signin {
+    #auth-signin {
     display: block;
-  } 
+    } 
 
-  .btn-mobile {
-    display:  none;
-  }
+    .btn-mobile {
+      display:  none;
+     }
+
+     #brands {
+
+      #logo-1, #logo-2, #logo-3, #logo-4, #logo-5, #logo-6 {
+      display: flex;
+      }
+    
+      }
+       
+      }
+  
+     
+     /*
+     #logo-1, #logo-2 {
+      display: flex;
+      justify-content: space-between;
+      
+      }
+      */
+    
+
+
+
 
 }
  
